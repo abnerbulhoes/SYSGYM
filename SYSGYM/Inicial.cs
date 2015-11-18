@@ -36,7 +36,7 @@ namespace SYSGYM
 
         private void btn_1_Click(object sender, EventArgs e)
         {
-            n_matricula.Text = n_matricula.Text + "1";
+            n_matricula.Text = n_matricula.Text + "1";            
         }
 
         private void n_matricula_TextChanged(object sender, EventArgs e)
@@ -93,10 +93,11 @@ namespace SYSGYM
         {
             n_matricula.Text = "";
         }
+                
 
         private void btn_ok_Click(object sender, EventArgs e)
         {
-            if (n_matricula.Text == "")
+            if (n_matricula.Text == "" || n_matricula.Text == null)
             {
                 num_matricula = 0;
             }
@@ -106,12 +107,13 @@ namespace SYSGYM
 
             if (num_matricula == 123)
             {
-                Cadastrar_Aluno Cadastar = new Cadastrar_Aluno();
-                Cadastar.Show();
+                index index = new index();
+                index.Show();
                 Hide();
             }
             else
             {
+                Console.Beep();
                 MessageBox.Show("Numero de matrícula inválido!");
                 n_matricula.Text = "";
             }
