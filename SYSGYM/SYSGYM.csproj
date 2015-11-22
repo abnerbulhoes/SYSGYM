@@ -65,6 +65,13 @@
     <Compile Include="Busca.Designer.cs">
       <DependentUpon>Busca.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Acesso.cs" />
+    <Compile Include="Classes\Aluno.cs" />
+    <Compile Include="Classes\AvaliacaoFisica.cs" />
+    <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\Instrutor.cs" />
+    <Compile Include="Classes\Mensalidade.cs" />
+    <Compile Include="Classes\Pessoa.cs" />
     <Compile Include="index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,7 +125,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sysgym_logo.png" />
+    <None Include="Resources\sysgym_logo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

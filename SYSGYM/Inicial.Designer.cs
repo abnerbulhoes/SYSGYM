@@ -203,10 +203,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::SYSGYM.Properties.Resources.sysgym_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(279, 37);
+            this.pictureBox1.Image = global::SYSGYM.Properties.Resources.sysgym_logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(262, 34);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(248, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;

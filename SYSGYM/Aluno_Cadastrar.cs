@@ -50,5 +50,15 @@ namespace SYSGYM
         {
             
         }
+
+        private void dataNascimento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataCadastro_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

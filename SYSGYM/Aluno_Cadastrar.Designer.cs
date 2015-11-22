@@ -163,6 +163,7 @@
             this.dataNascimento.Name = "dataNascimento";
             this.dataNascimento.Size = new System.Drawing.Size(294, 23);
             this.dataNascimento.TabIndex = 11;
+            this.dataNascimento.ValueChanged += new System.EventHandler(this.dataNascimento_ValueChanged);
             // 
             // l_dataNascimento
             // 
@@ -228,13 +229,13 @@
             // 
             // dataCadastro
             // 
-            this.dataCadastro.Enabled = false;
             this.dataCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataCadastro.Location = new System.Drawing.Point(427, 87);
             this.dataCadastro.Name = "dataCadastro";
             this.dataCadastro.Size = new System.Drawing.Size(294, 23);
             this.dataCadastro.TabIndex = 18;
-            this.dataCadastro.Value = new System.DateTime(2015, 11, 17, 17, 29, 25, 0);
+            this.dataCadastro.Value = new System.DateTime(2015, 11, 20, 23, 35, 21, 0);
+            this.dataCadastro.ValueChanged += new System.EventHandler(this.dataCadastro_ValueChanged);
             // 
             // l_dataCadastro
             // 
