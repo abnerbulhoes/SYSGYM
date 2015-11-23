@@ -35,7 +35,7 @@
             // btn_alunos
             // 
             this.btn_alunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_alunos.Location = new System.Drawing.Point(88, 89);
+            this.btn_alunos.Location = new System.Drawing.Point(68, 68);
             this.btn_alunos.Name = "btn_alunos";
             this.btn_alunos.Size = new System.Drawing.Size(87, 30);
             this.btn_alunos.TabIndex = 0;

@@ -39,5 +39,12 @@ namespace SYSGYM
         {
 
         }
+
+        private void btn_selecionar_Click(object sender, EventArgs e)
+        {
+            Perfil Perfil = new Perfil();
+            Perfil.Show();
+            Hide();
+        }
     }
 }

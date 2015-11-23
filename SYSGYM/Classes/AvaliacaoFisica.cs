@@ -2,7 +2,12 @@ using System;
 
 public class AvaliacaoFisica
 {
-	private DateTime data;    
+	private DateTime _dataAvaliacao;
+    public DateTime DataAvaliacao
+    {
+        get { return _dataAvaliacao; }
+        set { _dataAvaliacao = DataAvaliacao; }
+    }    
 
     private double peso;
     public double Peso

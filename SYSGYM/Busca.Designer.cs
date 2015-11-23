@@ -31,6 +31,7 @@
             this.btn_voltar = new System.Windows.Forms.Button();
             this.l_resultado = new System.Windows.Forms.Label();
             this.l_nome = new System.Windows.Forms.Label();
+            this.btn_selecionar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_voltar
@@ -63,11 +64,23 @@
             this.l_nome.Size = new System.Drawing.Size(0, 17);
             this.l_nome.TabIndex = 6;
             // 
+            // btn_selecionar
+            // 
+            this.btn_selecionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_selecionar.Location = new System.Drawing.Point(332, 526);
+            this.btn_selecionar.Name = "btn_selecionar";
+            this.btn_selecionar.Size = new System.Drawing.Size(95, 23);
+            this.btn_selecionar.TabIndex = 7;
+            this.btn_selecionar.Text = "Selecionar";
+            this.btn_selecionar.UseVisualStyleBackColor = true;
+            this.btn_selecionar.Click += new System.EventHandler(this.btn_selecionar_Click);
+            // 
             // Busca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btn_selecionar);
             this.Controls.Add(this.l_nome);
             this.Controls.Add(this.l_resultado);
             this.Controls.Add(this.btn_voltar);
@@ -85,5 +98,6 @@
         private System.Windows.Forms.Button btn_voltar;
         private System.Windows.Forms.Label l_resultado;
         private System.Windows.Forms.Label l_nome;
+        private System.Windows.Forms.Button btn_selecionar;
     }
 }

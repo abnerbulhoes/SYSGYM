@@ -105,10 +105,16 @@ namespace SYSGYM
                 num_matricula = Convert.ToInt32(n_matricula.Text);
 
 
-            if (num_matricula == 123)
+            if (num_matricula == 123) // Exemplo Aluno
             {
-                index index = new index();
-                index.Show();
+                Opcao_Aluno Opcao_Aluno = new Opcao_Aluno();
+                Opcao_Aluno.Show();                
+                Hide();
+            }
+            else if(num_matricula == 456) // Exemplo Usuario do sistema
+            {
+                Login Login = new Login();
+                Login.Show();
                 Hide();
             }
             else

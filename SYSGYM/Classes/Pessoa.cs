@@ -1,3 +1,5 @@
+using System;
+
 public class Pessoa
 {
 	private string nome;
@@ -21,15 +23,40 @@ public class Pessoa
         set { sexo = Sexo; }
     }
 
-	private int email;
+	private string email;
+    public string Email
+    {
+        get { return email; }
+        set { email = Email; }
+    }
 
-	private int dataNascimento;
+	private DateTime _dataNascimento;
+    public DateTime DataNascimento
+    {
+        get { return _dataNascimento; }
+        set { _dataNascimento = DataNascimento; }
+    }
 
-	private int datacadastro;
+	private DateTime _datacadastro;
+    public DateTime DataCadastro
+    {
+        get { return _datacadastro; }
+        set { _datacadastro = DataCadastro; }
+    }
 
 	private int numTelefone;
+    public int NumTelefone
+    {
+        get { return numTelefone; }
+        set { numTelefone = NumTelefone; }
+    }
 
-    private Endereco endereco;
+    private Endereco _endereco;
+    public Endereco Endereco
+    {
+        get { return _endereco; }
+        set { _endereco = Endereco; }
+    }
 
 }
 

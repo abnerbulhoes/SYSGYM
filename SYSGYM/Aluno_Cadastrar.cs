@@ -15,7 +15,7 @@ namespace SYSGYM
         public Aluno_Cadastrar()
         {
             InitializeComponent();
-            tbx_matricula.Text = "001";
+            tbx_matricula.Text = "001";            
         }
 
         private void btn_voltar_Click(object sender, EventArgs e)
@@ -57,6 +57,11 @@ namespace SYSGYM
         }
 
         private void dataCadastro_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txb_nome_TextChanged(object sender, EventArgs e)
         {
 
         }

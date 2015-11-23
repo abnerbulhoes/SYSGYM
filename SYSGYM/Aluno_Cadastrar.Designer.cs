@@ -35,8 +35,6 @@
             this.btn_voltar = new System.Windows.Forms.Button();
             this.tbx_matricula = new System.Windows.Forms.TextBox();
             this.l_matricula = new System.Windows.Forms.Label();
-            this.l_endereco = new System.Windows.Forms.Label();
-            this.tbx_endereco = new System.Windows.Forms.TextBox();
             this.txb_telefone = new System.Windows.Forms.TextBox();
             this.l_telefone = new System.Windows.Forms.Label();
             this.dataNascimento = new System.Windows.Forms.DateTimePicker();
@@ -46,10 +44,18 @@
             this.l_sexo = new System.Windows.Forms.Label();
             this.l_email = new System.Windows.Forms.Label();
             this.txb_email = new System.Windows.Forms.TextBox();
-            this.dataCadastro = new System.Windows.Forms.DateTimePicker();
             this.l_dataCadastro = new System.Windows.Forms.Label();
             this.pic_foto = new System.Windows.Forms.PictureBox();
             this.btn_salvar = new System.Windows.Forms.Button();
+            this.dateCadastro = new System.Windows.Forms.DateTimePicker();
+            this.l_rua = new System.Windows.Forms.Label();
+            this.l_bairro = new System.Windows.Forms.Label();
+            this.l_cep = new System.Windows.Forms.Label();
+            this.l_uf = new System.Windows.Forms.Label();
+            this.txb_cep = new System.Windows.Forms.TextBox();
+            this.txb_rua = new System.Windows.Forms.TextBox();
+            this.txb_estado = new System.Windows.Forms.TextBox();
+            this.txb_bairro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +76,7 @@
             this.txb_nome.Name = "txb_nome";
             this.txb_nome.Size = new System.Drawing.Size(457, 23);
             this.txb_nome.TabIndex = 1;
+            this.txb_nome.TextChanged += new System.EventHandler(this.txb_nome_TextChanged);
             // 
             // l_cpf
             // 
@@ -120,28 +127,10 @@
             this.l_matricula.TabIndex = 6;
             this.l_matricula.Text = "Matrícula";
             // 
-            // l_endereco
-            // 
-            this.l_endereco.AutoSize = true;
-            this.l_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_endereco.Location = new System.Drawing.Point(45, 343);
-            this.l_endereco.Name = "l_endereco";
-            this.l_endereco.Size = new System.Drawing.Size(69, 17);
-            this.l_endereco.TabIndex = 7;
-            this.l_endereco.Text = "Endereço";
-            // 
-            // tbx_endereco
-            // 
-            this.tbx_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_endereco.Location = new System.Drawing.Point(48, 373);
-            this.tbx_endereco.Name = "tbx_endereco";
-            this.tbx_endereco.Size = new System.Drawing.Size(486, 23);
-            this.tbx_endereco.TabIndex = 8;
-            // 
             // txb_telefone
             // 
             this.txb_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_telefone.Location = new System.Drawing.Point(48, 465);
+            this.txb_telefone.Location = new System.Drawing.Point(48, 363);
             this.txb_telefone.Name = "txb_telefone";
             this.txb_telefone.Size = new System.Drawing.Size(159, 23);
             this.txb_telefone.TabIndex = 9;
@@ -150,7 +139,7 @@
             // 
             this.l_telefone.AutoSize = true;
             this.l_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_telefone.Location = new System.Drawing.Point(45, 436);
+            this.l_telefone.Location = new System.Drawing.Point(45, 334);
             this.l_telefone.Name = "l_telefone";
             this.l_telefone.Size = new System.Drawing.Size(64, 17);
             this.l_telefone.TabIndex = 10;
@@ -213,7 +202,7 @@
             // 
             this.l_email.AutoSize = true;
             this.l_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_email.Location = new System.Drawing.Point(333, 436);
+            this.l_email.Location = new System.Drawing.Point(333, 334);
             this.l_email.Name = "l_email";
             this.l_email.Size = new System.Drawing.Size(42, 17);
             this.l_email.TabIndex = 16;
@@ -222,20 +211,10 @@
             // txb_email
             // 
             this.txb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_email.Location = new System.Drawing.Point(336, 465);
+            this.txb_email.Location = new System.Drawing.Point(336, 363);
             this.txb_email.Name = "txb_email";
             this.txb_email.Size = new System.Drawing.Size(363, 23);
             this.txb_email.TabIndex = 17;
-            // 
-            // dataCadastro
-            // 
-            this.dataCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataCadastro.Location = new System.Drawing.Point(427, 87);
-            this.dataCadastro.Name = "dataCadastro";
-            this.dataCadastro.Size = new System.Drawing.Size(294, 23);
-            this.dataCadastro.TabIndex = 18;
-            this.dataCadastro.Value = new System.DateTime(2015, 11, 20, 23, 35, 21, 0);
-            this.dataCadastro.ValueChanged += new System.EventHandler(this.dataCadastro_ValueChanged);
             // 
             // l_dataCadastro
             // 
@@ -267,15 +246,103 @@
             this.btn_salvar.Text = "Salvar!";
             this.btn_salvar.UseVisualStyleBackColor = true;
             // 
+            // dateCadastro
+            // 
+            this.dateCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateCadastro.Location = new System.Drawing.Point(421, 87);
+            this.dateCadastro.Name = "dateCadastro";
+            this.dateCadastro.Size = new System.Drawing.Size(294, 23);
+            this.dateCadastro.TabIndex = 22;
+            // 
+            // l_rua
+            // 
+            this.l_rua.AutoSize = true;
+            this.l_rua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_rua.Location = new System.Drawing.Point(45, 459);
+            this.l_rua.Name = "l_rua";
+            this.l_rua.Size = new System.Drawing.Size(34, 17);
+            this.l_rua.TabIndex = 23;
+            this.l_rua.Text = "Rua";
+            // 
+            // l_bairro
+            // 
+            this.l_bairro.AutoSize = true;
+            this.l_bairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_bairro.Location = new System.Drawing.Point(333, 410);
+            this.l_bairro.Name = "l_bairro";
+            this.l_bairro.Size = new System.Drawing.Size(46, 17);
+            this.l_bairro.TabIndex = 24;
+            this.l_bairro.Text = "Bairro";
+            // 
+            // l_cep
+            // 
+            this.l_cep.AutoSize = true;
+            this.l_cep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_cep.Location = new System.Drawing.Point(45, 410);
+            this.l_cep.Name = "l_cep";
+            this.l_cep.Size = new System.Drawing.Size(35, 17);
+            this.l_cep.TabIndex = 25;
+            this.l_cep.Text = "CEP";
+            // 
+            // l_uf
+            // 
+            this.l_uf.AutoSize = true;
+            this.l_uf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_uf.Location = new System.Drawing.Point(333, 459);
+            this.l_uf.Name = "l_uf";
+            this.l_uf.Size = new System.Drawing.Size(52, 17);
+            this.l_uf.TabIndex = 26;
+            this.l_uf.Text = "Estado";
+            // 
+            // txb_cep
+            // 
+            this.txb_cep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_cep.Location = new System.Drawing.Point(48, 430);
+            this.txb_cep.Name = "txb_cep";
+            this.txb_cep.Size = new System.Drawing.Size(100, 23);
+            this.txb_cep.TabIndex = 27;
+            // 
+            // txb_rua
+            // 
+            this.txb_rua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_rua.Location = new System.Drawing.Point(48, 490);
+            this.txb_rua.Name = "txb_rua";
+            this.txb_rua.Size = new System.Drawing.Size(211, 23);
+            this.txb_rua.TabIndex = 28;
+            // 
+            // txb_estado
+            // 
+            this.txb_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_estado.Location = new System.Drawing.Point(336, 490);
+            this.txb_estado.Name = "txb_estado";
+            this.txb_estado.Size = new System.Drawing.Size(60, 23);
+            this.txb_estado.TabIndex = 29;
+            // 
+            // txb_bairro
+            // 
+            this.txb_bairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_bairro.Location = new System.Drawing.Point(336, 429);
+            this.txb_bairro.Name = "txb_bairro";
+            this.txb_bairro.Size = new System.Drawing.Size(211, 23);
+            this.txb_bairro.TabIndex = 30;
+            // 
             // Aluno_Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.txb_bairro);
+            this.Controls.Add(this.txb_estado);
+            this.Controls.Add(this.txb_rua);
+            this.Controls.Add(this.txb_cep);
+            this.Controls.Add(this.l_uf);
+            this.Controls.Add(this.l_cep);
+            this.Controls.Add(this.l_bairro);
+            this.Controls.Add(this.l_rua);
+            this.Controls.Add(this.dateCadastro);
             this.Controls.Add(this.btn_salvar);
             this.Controls.Add(this.pic_foto);
             this.Controls.Add(this.l_dataCadastro);
-            this.Controls.Add(this.dataCadastro);
             this.Controls.Add(this.txb_email);
             this.Controls.Add(this.l_email);
             this.Controls.Add(this.l_sexo);
@@ -285,8 +352,6 @@
             this.Controls.Add(this.dataNascimento);
             this.Controls.Add(this.l_telefone);
             this.Controls.Add(this.txb_telefone);
-            this.Controls.Add(this.tbx_endereco);
-            this.Controls.Add(this.l_endereco);
             this.Controls.Add(this.l_matricula);
             this.Controls.Add(this.tbx_matricula);
             this.Controls.Add(this.btn_voltar);
@@ -312,8 +377,6 @@
         private System.Windows.Forms.Button btn_voltar;
         private System.Windows.Forms.TextBox tbx_matricula;
         private System.Windows.Forms.Label l_matricula;
-        private System.Windows.Forms.Label l_endereco;
-        private System.Windows.Forms.TextBox tbx_endereco;
         private System.Windows.Forms.TextBox txb_telefone;
         private System.Windows.Forms.Label l_telefone;
         private System.Windows.Forms.DateTimePicker dataNascimento;
@@ -323,9 +386,17 @@
         private System.Windows.Forms.Label l_sexo;
         private System.Windows.Forms.Label l_email;
         private System.Windows.Forms.TextBox txb_email;
-        private System.Windows.Forms.DateTimePicker dataCadastro;
         private System.Windows.Forms.Label l_dataCadastro;
         private System.Windows.Forms.PictureBox pic_foto;
         private System.Windows.Forms.Button btn_salvar;
+        private System.Windows.Forms.DateTimePicker dateCadastro;
+        private System.Windows.Forms.Label l_rua;
+        private System.Windows.Forms.Label l_bairro;
+        private System.Windows.Forms.Label l_cep;
+        private System.Windows.Forms.Label l_uf;
+        private System.Windows.Forms.TextBox txb_cep;
+        private System.Windows.Forms.TextBox txb_rua;
+        private System.Windows.Forms.TextBox txb_estado;
+        private System.Windows.Forms.TextBox txb_bairro;
     }
 }
