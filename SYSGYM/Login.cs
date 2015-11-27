@@ -12,9 +12,15 @@ namespace SYSGYM
 {
     public partial class Login : Form
     {
-        public Login()
+        string login;
+        int senha, matricula_instrutor;
+
+        public Login(int mat_instrut, string logi, int senh)
         {
-            InitializeComponent();            
+            InitializeComponent();
+            login = logi;
+            senha = senh;
+            matricula_instrutor = mat_instrut;       
         }
 
         private void btn_logar_Click(object sender, EventArgs e)
@@ -24,9 +30,9 @@ namespace SYSGYM
                 Console.Beep();
                 MessageBox.Show("Login ou senha inválidos!");                
             }
-            else if( txb_login.Text == "adm" && txb_senha.Text == "123456") // testando login
+            else if( txb_login.Text == login && txb_senha.Text == Convert.ToString(senha)) // testando login
             {
-                index index = new index();
+                index index = new index(matricula_instrutor);
                 index.Show();
                 Hide();
             }
@@ -45,6 +51,11 @@ namespace SYSGYM
         }
 
         private void txb_senha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

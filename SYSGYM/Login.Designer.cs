@@ -69,6 +69,7 @@
             this.txb_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_senha.Location = new System.Drawing.Point(274, 329);
             this.txb_senha.Name = "txb_senha";
+            this.txb_senha.PasswordChar = '*';
             this.txb_senha.Size = new System.Drawing.Size(217, 29);
             this.txb_senha.TabIndex = 3;
             this.txb_senha.TextChanged += new System.EventHandler(this.txb_senha_TextChanged);
@@ -97,6 +98,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

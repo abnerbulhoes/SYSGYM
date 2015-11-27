@@ -12,21 +12,35 @@ namespace SYSGYM
 {
     public partial class index : Form
     {
-        public index()
+        int matricula_instrutor;
+
+        public index(int mat_instrut)
         {
             InitializeComponent();
+            matricula_instrutor = mat_instrut; //matricula do instrutor logado
         }
 
         private void btn_sair_Click(object sender, EventArgs e)
         {
-            Close();
+            Close();            
         }
 
         private void btn_alunos_Click(object sender, EventArgs e)
         {
-            Aluno Aluno = new Aluno();
+            Aluno Aluno = new Aluno(matricula_instrutor); // ir passando a matricula do instrutor para caso seja feita a avaliacao salvar.
             Aluno.Show();
             Hide();
+        }
+
+        private void index_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_gerarRelatorio_Click(object sender, EventArgs e)
+        {
+            //implementar botao gerar relatorio...
+            //continuar carregando a matricula do instrutor...
         }
     }
 }

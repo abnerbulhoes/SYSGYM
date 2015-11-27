@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 public class Aluno : Pessoa
 {
 	private bool ativo;
@@ -21,10 +23,25 @@ public class Aluno : Pessoa
         set { mensalidade = Mesnsalidade; }
     }
 
-	public void AcessaAcademia()
+	public void SairAcademia()
 	{
+        if (Ativo == false)
+        {
+            MessageBox.Show("Não está dentro da Academia!");
+        }
+        else
+            Ativo = false;
+    }
 
-	}
+    public void EntraAcademia()
+    {
+        if (Ativo == true)
+        {
+            MessageBox.Show("Já está dentro da Academia!");
+        }
+        else
+            Ativo = true;
+    }
 
 }
 

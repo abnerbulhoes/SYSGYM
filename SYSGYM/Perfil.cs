@@ -12,9 +12,13 @@ namespace SYSGYM
 {
     public partial class Perfil : Form
     {
-        public Perfil()
+        int matricula_instrutor, matricula_aluno;
+
+        public Perfil(int mat_instrut, int mat_alun)
         {
             InitializeComponent();
+            matricula_instrutor = mat_instrut;
+            matricula_aluno = mat_alun;
         }
 
         private void dataNascimento_ValueChanged(object sender, EventArgs e)
@@ -24,7 +28,7 @@ namespace SYSGYM
 
         private void btn_voltar_Click(object sender, EventArgs e)
         {
-            Aluno Aluno = new Aluno();
+            Aluno Aluno = new Aluno(matricula_instrutor);
             Aluno.Show();
             Hide();
         }
@@ -57,6 +61,16 @@ namespace SYSGYM
         private void btn_atualizarAvaliacao_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void dataNascimento_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

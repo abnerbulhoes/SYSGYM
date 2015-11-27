@@ -33,8 +33,6 @@
             this.btn_atualizarAluno = new System.Windows.Forms.Button();
             this.Mensalidades = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btn_gerarBoleto = new System.Windows.Forms.Button();
             this.txb_bairro = new System.Windows.Forms.TextBox();
             this.txb_estado = new System.Windows.Forms.TextBox();
             this.txb_rua = new System.Windows.Forms.TextBox();
@@ -57,55 +55,57 @@
             this.l_cpf = new System.Windows.Forms.Label();
             this.txb_nome = new System.Windows.Forms.TextBox();
             this.l_nome = new System.Windows.Forms.Label();
-            this.l_valorMensalidade = new System.Windows.Forms.Label();
-            this.l_statusMensalidade = new System.Windows.Forms.Label();
-            this.l_vencimentoMensalidade = new System.Windows.Forms.Label();
-            this.l_mesRefencia = new System.Windows.Forms.Label();
-            this.txb_valorMensalidade = new System.Windows.Forms.TextBox();
-            this.txb_statusMensalidade = new System.Windows.Forms.TextBox();
-            this.date_VencimentoMesalidade = new System.Windows.Forms.DateTimePicker();
-            this.txb_mesReferencia = new System.Windows.Forms.TextBox();
-            this.btn_alterarMensalidade = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btn_excluirMensalidade = new System.Windows.Forms.Button();
+            this.btn_alterarMensalidade = new System.Windows.Forms.Button();
+            this.txb_mesReferencia = new System.Windows.Forms.TextBox();
+            this.date_VencimentoMesalidade = new System.Windows.Forms.DateTimePicker();
+            this.txb_statusMensalidade = new System.Windows.Forms.TextBox();
+            this.txb_valorMensalidade = new System.Windows.Forms.TextBox();
+            this.l_mesRefencia = new System.Windows.Forms.Label();
+            this.l_vencimentoMensalidade = new System.Windows.Forms.Label();
+            this.l_statusMensalidade = new System.Windows.Forms.Label();
+            this.l_valorMensalidade = new System.Windows.Forms.Label();
             this.AvalicaoFisica = new System.Windows.Forms.TabPage();
-            this.l_dataAvaliacao = new System.Windows.Forms.Label();
-            this.dateAvalicaoFisica = new System.Windows.Forms.DateTimePicker();
-            this.l_peso = new System.Windows.Forms.Label();
-            this.txb_peso = new System.Windows.Forms.TextBox();
-            this.l_altura = new System.Windows.Forms.Label();
-            this.l_imc = new System.Windows.Forms.Label();
-            this.l_peito = new System.Windows.Forms.Label();
-            this.l_cintura = new System.Windows.Forms.Label();
-            this.l_panturrilhaD = new System.Windows.Forms.Label();
-            this.l_panturrilhaE = new System.Windows.Forms.Label();
-            this.l_coxaD = new System.Windows.Forms.Label();
-            this.l_bracoD = new System.Windows.Forms.Label();
-            this.l_coxaE = new System.Windows.Forms.Label();
-            this.l_bracoE = new System.Windows.Forms.Label();
-            this.l_antebracoD = new System.Windows.Forms.Label();
-            this.l_gluteo = new System.Windows.Forms.Label();
-            this.l_antebracoE = new System.Windows.Forms.Label();
-            this.txb_altura = new System.Windows.Forms.TextBox();
-            this.txb_imc = new System.Windows.Forms.TextBox();
-            this.txb_peito = new System.Windows.Forms.TextBox();
-            this.txb_cintura = new System.Windows.Forms.TextBox();
-            this.txb_panturrilhaD = new System.Windows.Forms.TextBox();
-            this.txb_panturrilhaE = new System.Windows.Forms.TextBox();
-            this.txb_coxaD = new System.Windows.Forms.TextBox();
-            this.txb_coxaE = new System.Windows.Forms.TextBox();
-            this.txb_bracoD = new System.Windows.Forms.TextBox();
-            this.txb_bracoE = new System.Windows.Forms.TextBox();
-            this.txb_antebracoD = new System.Windows.Forms.TextBox();
-            this.txb_antebracoE = new System.Windows.Forms.TextBox();
-            this.txb_gluteo = new System.Windows.Forms.TextBox();
-            this.btn_realizarAvalicao = new System.Windows.Forms.Button();
-            this.btn_alterarAvaliacao = new System.Windows.Forms.Button();
-            this.btn_excluirAvaliacao = new System.Windows.Forms.Button();
             this.btn_atualizarAvaliacao = new System.Windows.Forms.Button();
+            this.btn_excluirAvaliacao = new System.Windows.Forms.Button();
+            this.btn_alterarAvaliacao = new System.Windows.Forms.Button();
+            this.btn_realizarAvalicao = new System.Windows.Forms.Button();
+            this.txb_gluteo = new System.Windows.Forms.TextBox();
+            this.txb_antebracoE = new System.Windows.Forms.TextBox();
+            this.txb_antebracoD = new System.Windows.Forms.TextBox();
+            this.txb_bracoE = new System.Windows.Forms.TextBox();
+            this.txb_bracoD = new System.Windows.Forms.TextBox();
+            this.txb_coxaE = new System.Windows.Forms.TextBox();
+            this.txb_coxaD = new System.Windows.Forms.TextBox();
+            this.txb_panturrilhaE = new System.Windows.Forms.TextBox();
+            this.txb_panturrilhaD = new System.Windows.Forms.TextBox();
+            this.txb_cintura = new System.Windows.Forms.TextBox();
+            this.txb_peito = new System.Windows.Forms.TextBox();
+            this.txb_imc = new System.Windows.Forms.TextBox();
+            this.txb_altura = new System.Windows.Forms.TextBox();
+            this.l_antebracoE = new System.Windows.Forms.Label();
+            this.l_gluteo = new System.Windows.Forms.Label();
+            this.l_antebracoD = new System.Windows.Forms.Label();
+            this.l_bracoE = new System.Windows.Forms.Label();
+            this.l_coxaE = new System.Windows.Forms.Label();
+            this.l_bracoD = new System.Windows.Forms.Label();
+            this.l_coxaD = new System.Windows.Forms.Label();
+            this.l_panturrilhaE = new System.Windows.Forms.Label();
+            this.l_panturrilhaD = new System.Windows.Forms.Label();
+            this.l_cintura = new System.Windows.Forms.Label();
+            this.l_peito = new System.Windows.Forms.Label();
+            this.l_imc = new System.Windows.Forms.Label();
+            this.l_altura = new System.Windows.Forms.Label();
+            this.txb_peso = new System.Windows.Forms.TextBox();
+            this.l_peso = new System.Windows.Forms.Label();
+            this.dateAvalicaoFisica = new System.Windows.Forms.DateTimePicker();
+            this.l_dataAvaliacao = new System.Windows.Forms.Label();
+            this.btn_gerarBoleto = new System.Windows.Forms.Button();
             this.Mensalidades.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_foto)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.AvalicaoFisica.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,36 +184,7 @@
             this.tabPage1.Size = new System.Drawing.Size(752, 409);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Perfil";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.btn_excluirMensalidade);
-            this.tabPage2.Controls.Add(this.btn_alterarMensalidade);
-            this.tabPage2.Controls.Add(this.txb_mesReferencia);
-            this.tabPage2.Controls.Add(this.date_VencimentoMesalidade);
-            this.tabPage2.Controls.Add(this.txb_statusMensalidade);
-            this.tabPage2.Controls.Add(this.txb_valorMensalidade);
-            this.tabPage2.Controls.Add(this.l_mesRefencia);
-            this.tabPage2.Controls.Add(this.l_vencimentoMensalidade);
-            this.tabPage2.Controls.Add(this.l_statusMensalidade);
-            this.tabPage2.Controls.Add(this.l_valorMensalidade);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(752, 409);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mensalidades";
-            // 
-            // btn_gerarBoleto
-            // 
-            this.btn_gerarBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_gerarBoleto.Location = new System.Drawing.Point(309, 471);
-            this.btn_gerarBoleto.Name = "btn_gerarBoleto";
-            this.btn_gerarBoleto.Size = new System.Drawing.Size(180, 23);
-            this.btn_gerarBoleto.TabIndex = 86;
-            this.btn_gerarBoleto.Text = "Gerar Boleto";
-            this.btn_gerarBoleto.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // txb_bairro
             // 
@@ -363,6 +334,7 @@
             this.dataNascimento.Name = "dataNascimento";
             this.dataNascimento.Size = new System.Drawing.Size(294, 23);
             this.dataNascimento.TabIndex = 69;
+            this.dataNascimento.ValueChanged += new System.EventHandler(this.dataNascimento_ValueChanged_1);
             // 
             // l_telefone
             // 
@@ -418,15 +390,88 @@
             this.l_nome.TabIndex = 63;
             this.l_nome.Text = "Nome";
             // 
-            // l_valorMensalidade
+            // tabPage2
             // 
-            this.l_valorMensalidade.AutoSize = true;
-            this.l_valorMensalidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_valorMensalidade.Location = new System.Drawing.Point(35, 37);
-            this.l_valorMensalidade.Name = "l_valorMensalidade";
-            this.l_valorMensalidade.Size = new System.Drawing.Size(117, 17);
-            this.l_valorMensalidade.TabIndex = 0;
-            this.l_valorMensalidade.Text = "Valor Mesalidade";
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.btn_excluirMensalidade);
+            this.tabPage2.Controls.Add(this.btn_alterarMensalidade);
+            this.tabPage2.Controls.Add(this.txb_mesReferencia);
+            this.tabPage2.Controls.Add(this.date_VencimentoMesalidade);
+            this.tabPage2.Controls.Add(this.txb_statusMensalidade);
+            this.tabPage2.Controls.Add(this.txb_valorMensalidade);
+            this.tabPage2.Controls.Add(this.l_mesRefencia);
+            this.tabPage2.Controls.Add(this.l_vencimentoMensalidade);
+            this.tabPage2.Controls.Add(this.l_statusMensalidade);
+            this.tabPage2.Controls.Add(this.l_valorMensalidade);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(752, 409);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mensalidades";
+            // 
+            // btn_excluirMensalidade
+            // 
+            this.btn_excluirMensalidade.Location = new System.Drawing.Point(710, 80);
+            this.btn_excluirMensalidade.Name = "btn_excluirMensalidade";
+            this.btn_excluirMensalidade.Size = new System.Drawing.Size(25, 25);
+            this.btn_excluirMensalidade.TabIndex = 9;
+            this.btn_excluirMensalidade.UseVisualStyleBackColor = true;
+            this.btn_excluirMensalidade.Click += new System.EventHandler(this.btn_excluirMensalidade_Click);
+            // 
+            // btn_alterarMensalidade
+            // 
+            this.btn_alterarMensalidade.Location = new System.Drawing.Point(710, 30);
+            this.btn_alterarMensalidade.Name = "btn_alterarMensalidade";
+            this.btn_alterarMensalidade.Size = new System.Drawing.Size(25, 25);
+            this.btn_alterarMensalidade.TabIndex = 8;
+            this.btn_alterarMensalidade.UseVisualStyleBackColor = true;
+            // 
+            // txb_mesReferencia
+            // 
+            this.txb_mesReferencia.Location = new System.Drawing.Point(412, 241);
+            this.txb_mesReferencia.Name = "txb_mesReferencia";
+            this.txb_mesReferencia.Size = new System.Drawing.Size(100, 23);
+            this.txb_mesReferencia.TabIndex = 7;
+            // 
+            // date_VencimentoMesalidade
+            // 
+            this.date_VencimentoMesalidade.Location = new System.Drawing.Point(38, 241);
+            this.date_VencimentoMesalidade.Name = "date_VencimentoMesalidade";
+            this.date_VencimentoMesalidade.Size = new System.Drawing.Size(290, 23);
+            this.date_VencimentoMesalidade.TabIndex = 6;
+            // 
+            // txb_statusMensalidade
+            // 
+            this.txb_statusMensalidade.Location = new System.Drawing.Point(412, 78);
+            this.txb_statusMensalidade.Name = "txb_statusMensalidade";
+            this.txb_statusMensalidade.Size = new System.Drawing.Size(129, 23);
+            this.txb_statusMensalidade.TabIndex = 5;
+            // 
+            // txb_valorMensalidade
+            // 
+            this.txb_valorMensalidade.Location = new System.Drawing.Point(38, 78);
+            this.txb_valorMensalidade.Name = "txb_valorMensalidade";
+            this.txb_valorMensalidade.Size = new System.Drawing.Size(128, 23);
+            this.txb_valorMensalidade.TabIndex = 4;
+            // 
+            // l_mesRefencia
+            // 
+            this.l_mesRefencia.AutoSize = true;
+            this.l_mesRefencia.Location = new System.Drawing.Point(412, 201);
+            this.l_mesRefencia.Name = "l_mesRefencia";
+            this.l_mesRefencia.Size = new System.Drawing.Size(107, 17);
+            this.l_mesRefencia.TabIndex = 3;
+            this.l_mesRefencia.Text = "Mês Referencia";
+            // 
+            // l_vencimentoMensalidade
+            // 
+            this.l_vencimentoMensalidade.AutoSize = true;
+            this.l_vencimentoMensalidade.Location = new System.Drawing.Point(35, 201);
+            this.l_vencimentoMensalidade.Name = "l_vencimentoMensalidade";
+            this.l_vencimentoMensalidade.Size = new System.Drawing.Size(162, 17);
+            this.l_vencimentoMensalidade.TabIndex = 2;
+            this.l_vencimentoMensalidade.Text = "Vencimento  Mesalidade";
             // 
             // l_statusMensalidade
             // 
@@ -438,68 +483,15 @@
             this.l_statusMensalidade.TabIndex = 1;
             this.l_statusMensalidade.Text = "Status Mensalidade";
             // 
-            // l_vencimentoMensalidade
+            // l_valorMensalidade
             // 
-            this.l_vencimentoMensalidade.AutoSize = true;
-            this.l_vencimentoMensalidade.Location = new System.Drawing.Point(35, 201);
-            this.l_vencimentoMensalidade.Name = "l_vencimentoMensalidade";
-            this.l_vencimentoMensalidade.Size = new System.Drawing.Size(162, 17);
-            this.l_vencimentoMensalidade.TabIndex = 2;
-            this.l_vencimentoMensalidade.Text = "Vencimento  Mesalidade";
-            // 
-            // l_mesRefencia
-            // 
-            this.l_mesRefencia.AutoSize = true;
-            this.l_mesRefencia.Location = new System.Drawing.Point(412, 201);
-            this.l_mesRefencia.Name = "l_mesRefencia";
-            this.l_mesRefencia.Size = new System.Drawing.Size(107, 17);
-            this.l_mesRefencia.TabIndex = 3;
-            this.l_mesRefencia.Text = "Mês Referencia";
-            // 
-            // txb_valorMensalidade
-            // 
-            this.txb_valorMensalidade.Location = new System.Drawing.Point(38, 78);
-            this.txb_valorMensalidade.Name = "txb_valorMensalidade";
-            this.txb_valorMensalidade.Size = new System.Drawing.Size(128, 23);
-            this.txb_valorMensalidade.TabIndex = 4;
-            // 
-            // txb_statusMensalidade
-            // 
-            this.txb_statusMensalidade.Location = new System.Drawing.Point(412, 78);
-            this.txb_statusMensalidade.Name = "txb_statusMensalidade";
-            this.txb_statusMensalidade.Size = new System.Drawing.Size(129, 23);
-            this.txb_statusMensalidade.TabIndex = 5;
-            // 
-            // date_VencimentoMesalidade
-            // 
-            this.date_VencimentoMesalidade.Location = new System.Drawing.Point(38, 241);
-            this.date_VencimentoMesalidade.Name = "date_VencimentoMesalidade";
-            this.date_VencimentoMesalidade.Size = new System.Drawing.Size(290, 23);
-            this.date_VencimentoMesalidade.TabIndex = 6;
-            // 
-            // txb_mesReferencia
-            // 
-            this.txb_mesReferencia.Location = new System.Drawing.Point(412, 241);
-            this.txb_mesReferencia.Name = "txb_mesReferencia";
-            this.txb_mesReferencia.Size = new System.Drawing.Size(100, 23);
-            this.txb_mesReferencia.TabIndex = 7;
-            // 
-            // btn_alterarMensalidade
-            // 
-            this.btn_alterarMensalidade.Location = new System.Drawing.Point(710, 30);
-            this.btn_alterarMensalidade.Name = "btn_alterarMensalidade";
-            this.btn_alterarMensalidade.Size = new System.Drawing.Size(25, 25);
-            this.btn_alterarMensalidade.TabIndex = 8;
-            this.btn_alterarMensalidade.UseVisualStyleBackColor = true;
-            // 
-            // btn_excluirMensalidade
-            // 
-            this.btn_excluirMensalidade.Location = new System.Drawing.Point(710, 80);
-            this.btn_excluirMensalidade.Name = "btn_excluirMensalidade";
-            this.btn_excluirMensalidade.Size = new System.Drawing.Size(25, 25);
-            this.btn_excluirMensalidade.TabIndex = 9;
-            this.btn_excluirMensalidade.UseVisualStyleBackColor = true;
-            this.btn_excluirMensalidade.Click += new System.EventHandler(this.btn_excluirMensalidade_Click);
+            this.l_valorMensalidade.AutoSize = true;
+            this.l_valorMensalidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_valorMensalidade.Location = new System.Drawing.Point(35, 37);
+            this.l_valorMensalidade.Name = "l_valorMensalidade";
+            this.l_valorMensalidade.Size = new System.Drawing.Size(117, 17);
+            this.l_valorMensalidade.TabIndex = 0;
+            this.l_valorMensalidade.Text = "Valor Mesalidade";
             // 
             // AvalicaoFisica
             // 
@@ -544,137 +536,143 @@
             this.AvalicaoFisica.TabIndex = 2;
             this.AvalicaoFisica.Text = "Avaliação Física";
             // 
-            // l_dataAvaliacao
+            // btn_atualizarAvaliacao
             // 
-            this.l_dataAvaliacao.AutoSize = true;
-            this.l_dataAvaliacao.Location = new System.Drawing.Point(17, 32);
-            this.l_dataAvaliacao.Name = "l_dataAvaliacao";
-            this.l_dataAvaliacao.Size = new System.Drawing.Size(103, 17);
-            this.l_dataAvaliacao.TabIndex = 0;
-            this.l_dataAvaliacao.Text = "Data Avaliação";
+            this.btn_atualizarAvaliacao.Location = new System.Drawing.Point(20, 371);
+            this.btn_atualizarAvaliacao.Name = "btn_atualizarAvaliacao";
+            this.btn_atualizarAvaliacao.Size = new System.Drawing.Size(180, 23);
+            this.btn_atualizarAvaliacao.TabIndex = 33;
+            this.btn_atualizarAvaliacao.Text = "Atualizar";
+            this.btn_atualizarAvaliacao.UseVisualStyleBackColor = true;
+            this.btn_atualizarAvaliacao.Visible = false;
+            this.btn_atualizarAvaliacao.Click += new System.EventHandler(this.btn_atualizarAvaliacao_Click);
             // 
-            // dateAvalicaoFisica
+            // btn_excluirAvaliacao
             // 
-            this.dateAvalicaoFisica.Location = new System.Drawing.Point(20, 53);
-            this.dateAvalicaoFisica.Name = "dateAvalicaoFisica";
-            this.dateAvalicaoFisica.Size = new System.Drawing.Size(261, 23);
-            this.dateAvalicaoFisica.TabIndex = 1;
+            this.btn_excluirAvaliacao.Location = new System.Drawing.Point(710, 80);
+            this.btn_excluirAvaliacao.Name = "btn_excluirAvaliacao";
+            this.btn_excluirAvaliacao.Size = new System.Drawing.Size(25, 25);
+            this.btn_excluirAvaliacao.TabIndex = 32;
+            this.btn_excluirAvaliacao.UseVisualStyleBackColor = true;
+            this.btn_excluirAvaliacao.Click += new System.EventHandler(this.btn_excluirAvaliacao_Click);
             // 
-            // l_peso
+            // btn_alterarAvaliacao
             // 
-            this.l_peso.AutoSize = true;
-            this.l_peso.Location = new System.Drawing.Point(321, 32);
-            this.l_peso.Name = "l_peso";
-            this.l_peso.Size = new System.Drawing.Size(40, 17);
-            this.l_peso.TabIndex = 2;
-            this.l_peso.Text = "Peso";
-            this.l_peso.Click += new System.EventHandler(this.l_peso_Click);
+            this.btn_alterarAvaliacao.Location = new System.Drawing.Point(710, 30);
+            this.btn_alterarAvaliacao.Name = "btn_alterarAvaliacao";
+            this.btn_alterarAvaliacao.Size = new System.Drawing.Size(25, 25);
+            this.btn_alterarAvaliacao.TabIndex = 31;
+            this.btn_alterarAvaliacao.UseVisualStyleBackColor = true;
+            this.btn_alterarAvaliacao.Click += new System.EventHandler(this.btn_alterarAvaliacao_Click);
             // 
-            // txb_peso
+            // btn_realizarAvalicao
             // 
-            this.txb_peso.Location = new System.Drawing.Point(324, 55);
-            this.txb_peso.Name = "txb_peso";
-            this.txb_peso.Size = new System.Drawing.Size(59, 23);
-            this.txb_peso.TabIndex = 3;
+            this.btn_realizarAvalicao.Location = new System.Drawing.Point(293, 371);
+            this.btn_realizarAvalicao.Name = "btn_realizarAvalicao";
+            this.btn_realizarAvalicao.Size = new System.Drawing.Size(180, 23);
+            this.btn_realizarAvalicao.TabIndex = 30;
+            this.btn_realizarAvalicao.Text = "Realizar Avalição";
+            this.btn_realizarAvalicao.UseVisualStyleBackColor = true;
             // 
-            // l_altura
+            // txb_gluteo
             // 
-            this.l_altura.AutoSize = true;
-            this.l_altura.Location = new System.Drawing.Point(442, 32);
-            this.l_altura.Name = "l_altura";
-            this.l_altura.Size = new System.Drawing.Size(45, 17);
-            this.l_altura.TabIndex = 4;
-            this.l_altura.Text = "Altura";
+            this.txb_gluteo.Location = new System.Drawing.Point(368, 322);
+            this.txb_gluteo.Name = "txb_gluteo";
+            this.txb_gluteo.Size = new System.Drawing.Size(100, 23);
+            this.txb_gluteo.TabIndex = 29;
             // 
-            // l_imc
+            // txb_antebracoE
             // 
-            this.l_imc.AutoSize = true;
-            this.l_imc.Location = new System.Drawing.Point(557, 32);
-            this.l_imc.Name = "l_imc";
-            this.l_imc.Size = new System.Drawing.Size(31, 17);
-            this.l_imc.TabIndex = 5;
-            this.l_imc.Text = "IMC";
+            this.txb_antebracoE.Location = new System.Drawing.Point(195, 322);
+            this.txb_antebracoE.Name = "txb_antebracoE";
+            this.txb_antebracoE.Size = new System.Drawing.Size(100, 23);
+            this.txb_antebracoE.TabIndex = 28;
             // 
-            // l_peito
+            // txb_antebracoD
             // 
-            this.l_peito.AutoSize = true;
-            this.l_peito.Location = new System.Drawing.Point(17, 130);
-            this.l_peito.Name = "l_peito";
-            this.l_peito.Size = new System.Drawing.Size(40, 17);
-            this.l_peito.TabIndex = 6;
-            this.l_peito.Text = "Peito";
+            this.txb_antebracoD.Location = new System.Drawing.Point(20, 322);
+            this.txb_antebracoD.Name = "txb_antebracoD";
+            this.txb_antebracoD.Size = new System.Drawing.Size(100, 23);
+            this.txb_antebracoD.TabIndex = 27;
             // 
-            // l_cintura
+            // txb_bracoE
             // 
-            this.l_cintura.AutoSize = true;
-            this.l_cintura.Location = new System.Drawing.Point(192, 130);
-            this.l_cintura.Name = "l_cintura";
-            this.l_cintura.Size = new System.Drawing.Size(53, 17);
-            this.l_cintura.TabIndex = 7;
-            this.l_cintura.Text = "Cintura";
+            this.txb_bracoE.Location = new System.Drawing.Point(560, 239);
+            this.txb_bracoE.Name = "txb_bracoE";
+            this.txb_bracoE.Size = new System.Drawing.Size(100, 23);
+            this.txb_bracoE.TabIndex = 26;
             // 
-            // l_panturrilhaD
+            // txb_bracoD
             // 
-            this.l_panturrilhaD.AutoSize = true;
-            this.l_panturrilhaD.Location = new System.Drawing.Point(365, 130);
-            this.l_panturrilhaD.Name = "l_panturrilhaD";
-            this.l_panturrilhaD.Size = new System.Drawing.Size(122, 17);
-            this.l_panturrilhaD.TabIndex = 8;
-            this.l_panturrilhaD.Text = "Panturrilha Direita";
+            this.txb_bracoD.Location = new System.Drawing.Point(368, 239);
+            this.txb_bracoD.Name = "txb_bracoD";
+            this.txb_bracoD.Size = new System.Drawing.Size(100, 23);
+            this.txb_bracoD.TabIndex = 25;
             // 
-            // l_panturrilhaE
+            // txb_coxaE
             // 
-            this.l_panturrilhaE.AutoSize = true;
-            this.l_panturrilhaE.Location = new System.Drawing.Point(557, 130);
-            this.l_panturrilhaE.Name = "l_panturrilhaE";
-            this.l_panturrilhaE.Size = new System.Drawing.Size(142, 17);
-            this.l_panturrilhaE.TabIndex = 9;
-            this.l_panturrilhaE.Text = "Panturrilha Esquerda";
+            this.txb_coxaE.Location = new System.Drawing.Point(195, 239);
+            this.txb_coxaE.Name = "txb_coxaE";
+            this.txb_coxaE.Size = new System.Drawing.Size(100, 23);
+            this.txb_coxaE.TabIndex = 24;
             // 
-            // l_coxaD
+            // txb_coxaD
             // 
-            this.l_coxaD.AutoSize = true;
-            this.l_coxaD.Location = new System.Drawing.Point(17, 210);
-            this.l_coxaD.Name = "l_coxaD";
-            this.l_coxaD.Size = new System.Drawing.Size(84, 17);
-            this.l_coxaD.TabIndex = 10;
-            this.l_coxaD.Text = "Coxa Direita";
+            this.txb_coxaD.Location = new System.Drawing.Point(20, 239);
+            this.txb_coxaD.Name = "txb_coxaD";
+            this.txb_coxaD.Size = new System.Drawing.Size(100, 23);
+            this.txb_coxaD.TabIndex = 23;
             // 
-            // l_bracoD
+            // txb_panturrilhaE
             // 
-            this.l_bracoD.AutoSize = true;
-            this.l_bracoD.Location = new System.Drawing.Point(365, 210);
-            this.l_bracoD.Name = "l_bracoD";
-            this.l_bracoD.Size = new System.Drawing.Size(90, 17);
-            this.l_bracoD.TabIndex = 11;
-            this.l_bracoD.Text = "Braço Direito";
+            this.txb_panturrilhaE.Location = new System.Drawing.Point(560, 155);
+            this.txb_panturrilhaE.Name = "txb_panturrilhaE";
+            this.txb_panturrilhaE.Size = new System.Drawing.Size(91, 23);
+            this.txb_panturrilhaE.TabIndex = 22;
             // 
-            // l_coxaE
+            // txb_panturrilhaD
             // 
-            this.l_coxaE.AutoSize = true;
-            this.l_coxaE.Location = new System.Drawing.Point(192, 210);
-            this.l_coxaE.Name = "l_coxaE";
-            this.l_coxaE.Size = new System.Drawing.Size(104, 17);
-            this.l_coxaE.TabIndex = 12;
-            this.l_coxaE.Text = "Coxa Esquerda";
+            this.txb_panturrilhaD.Location = new System.Drawing.Point(368, 155);
+            this.txb_panturrilhaD.Name = "txb_panturrilhaD";
+            this.txb_panturrilhaD.Size = new System.Drawing.Size(80, 23);
+            this.txb_panturrilhaD.TabIndex = 21;
             // 
-            // l_bracoE
+            // txb_cintura
             // 
-            this.l_bracoE.AutoSize = true;
-            this.l_bracoE.Location = new System.Drawing.Point(557, 210);
-            this.l_bracoE.Name = "l_bracoE";
-            this.l_bracoE.Size = new System.Drawing.Size(110, 17);
-            this.l_bracoE.TabIndex = 13;
-            this.l_bracoE.Text = "Braço Esquerdo";
+            this.txb_cintura.Location = new System.Drawing.Point(195, 155);
+            this.txb_cintura.Name = "txb_cintura";
+            this.txb_cintura.Size = new System.Drawing.Size(73, 23);
+            this.txb_cintura.TabIndex = 20;
             // 
-            // l_antebracoD
+            // txb_peito
             // 
-            this.l_antebracoD.AutoSize = true;
-            this.l_antebracoD.Location = new System.Drawing.Point(17, 293);
-            this.l_antebracoD.Name = "l_antebracoD";
-            this.l_antebracoD.Size = new System.Drawing.Size(118, 17);
-            this.l_antebracoD.TabIndex = 14;
-            this.l_antebracoD.Text = "Antebraço Direito";
+            this.txb_peito.Location = new System.Drawing.Point(20, 155);
+            this.txb_peito.Name = "txb_peito";
+            this.txb_peito.Size = new System.Drawing.Size(69, 23);
+            this.txb_peito.TabIndex = 19;
+            // 
+            // txb_imc
+            // 
+            this.txb_imc.Location = new System.Drawing.Point(560, 55);
+            this.txb_imc.Name = "txb_imc";
+            this.txb_imc.Size = new System.Drawing.Size(100, 23);
+            this.txb_imc.TabIndex = 18;
+            // 
+            // txb_altura
+            // 
+            this.txb_altura.Location = new System.Drawing.Point(445, 55);
+            this.txb_altura.Name = "txb_altura";
+            this.txb_altura.Size = new System.Drawing.Size(79, 23);
+            this.txb_altura.TabIndex = 17;
+            // 
+            // l_antebracoE
+            // 
+            this.l_antebracoE.AutoSize = true;
+            this.l_antebracoE.Location = new System.Drawing.Point(192, 293);
+            this.l_antebracoE.Name = "l_antebracoE";
+            this.l_antebracoE.Size = new System.Drawing.Size(138, 17);
+            this.l_antebracoE.TabIndex = 16;
+            this.l_antebracoE.Text = "Antebraço Esquerdo";
             // 
             // l_gluteo
             // 
@@ -686,143 +684,147 @@
             this.l_gluteo.Text = "Glúteo";
             this.l_gluteo.Click += new System.EventHandler(this.l_gluteo_Click);
             // 
-            // l_antebracoE
+            // l_antebracoD
             // 
-            this.l_antebracoE.AutoSize = true;
-            this.l_antebracoE.Location = new System.Drawing.Point(192, 293);
-            this.l_antebracoE.Name = "l_antebracoE";
-            this.l_antebracoE.Size = new System.Drawing.Size(138, 17);
-            this.l_antebracoE.TabIndex = 16;
-            this.l_antebracoE.Text = "Antebraço Esquerdo";
+            this.l_antebracoD.AutoSize = true;
+            this.l_antebracoD.Location = new System.Drawing.Point(17, 293);
+            this.l_antebracoD.Name = "l_antebracoD";
+            this.l_antebracoD.Size = new System.Drawing.Size(118, 17);
+            this.l_antebracoD.TabIndex = 14;
+            this.l_antebracoD.Text = "Antebraço Direito";
             // 
-            // txb_altura
+            // l_bracoE
             // 
-            this.txb_altura.Location = new System.Drawing.Point(445, 55);
-            this.txb_altura.Name = "txb_altura";
-            this.txb_altura.Size = new System.Drawing.Size(79, 23);
-            this.txb_altura.TabIndex = 17;
+            this.l_bracoE.AutoSize = true;
+            this.l_bracoE.Location = new System.Drawing.Point(557, 210);
+            this.l_bracoE.Name = "l_bracoE";
+            this.l_bracoE.Size = new System.Drawing.Size(110, 17);
+            this.l_bracoE.TabIndex = 13;
+            this.l_bracoE.Text = "Braço Esquerdo";
             // 
-            // txb_imc
+            // l_coxaE
             // 
-            this.txb_imc.Location = new System.Drawing.Point(560, 55);
-            this.txb_imc.Name = "txb_imc";
-            this.txb_imc.Size = new System.Drawing.Size(100, 23);
-            this.txb_imc.TabIndex = 18;
+            this.l_coxaE.AutoSize = true;
+            this.l_coxaE.Location = new System.Drawing.Point(192, 210);
+            this.l_coxaE.Name = "l_coxaE";
+            this.l_coxaE.Size = new System.Drawing.Size(104, 17);
+            this.l_coxaE.TabIndex = 12;
+            this.l_coxaE.Text = "Coxa Esquerda";
             // 
-            // txb_peito
+            // l_bracoD
             // 
-            this.txb_peito.Location = new System.Drawing.Point(20, 155);
-            this.txb_peito.Name = "txb_peito";
-            this.txb_peito.Size = new System.Drawing.Size(69, 23);
-            this.txb_peito.TabIndex = 19;
+            this.l_bracoD.AutoSize = true;
+            this.l_bracoD.Location = new System.Drawing.Point(365, 210);
+            this.l_bracoD.Name = "l_bracoD";
+            this.l_bracoD.Size = new System.Drawing.Size(90, 17);
+            this.l_bracoD.TabIndex = 11;
+            this.l_bracoD.Text = "Braço Direito";
             // 
-            // txb_cintura
+            // l_coxaD
             // 
-            this.txb_cintura.Location = new System.Drawing.Point(195, 155);
-            this.txb_cintura.Name = "txb_cintura";
-            this.txb_cintura.Size = new System.Drawing.Size(73, 23);
-            this.txb_cintura.TabIndex = 20;
+            this.l_coxaD.AutoSize = true;
+            this.l_coxaD.Location = new System.Drawing.Point(17, 210);
+            this.l_coxaD.Name = "l_coxaD";
+            this.l_coxaD.Size = new System.Drawing.Size(84, 17);
+            this.l_coxaD.TabIndex = 10;
+            this.l_coxaD.Text = "Coxa Direita";
             // 
-            // txb_panturrilhaD
+            // l_panturrilhaE
             // 
-            this.txb_panturrilhaD.Location = new System.Drawing.Point(368, 155);
-            this.txb_panturrilhaD.Name = "txb_panturrilhaD";
-            this.txb_panturrilhaD.Size = new System.Drawing.Size(80, 23);
-            this.txb_panturrilhaD.TabIndex = 21;
+            this.l_panturrilhaE.AutoSize = true;
+            this.l_panturrilhaE.Location = new System.Drawing.Point(557, 130);
+            this.l_panturrilhaE.Name = "l_panturrilhaE";
+            this.l_panturrilhaE.Size = new System.Drawing.Size(142, 17);
+            this.l_panturrilhaE.TabIndex = 9;
+            this.l_panturrilhaE.Text = "Panturrilha Esquerda";
             // 
-            // txb_panturrilhaE
+            // l_panturrilhaD
             // 
-            this.txb_panturrilhaE.Location = new System.Drawing.Point(560, 155);
-            this.txb_panturrilhaE.Name = "txb_panturrilhaE";
-            this.txb_panturrilhaE.Size = new System.Drawing.Size(91, 23);
-            this.txb_panturrilhaE.TabIndex = 22;
+            this.l_panturrilhaD.AutoSize = true;
+            this.l_panturrilhaD.Location = new System.Drawing.Point(365, 130);
+            this.l_panturrilhaD.Name = "l_panturrilhaD";
+            this.l_panturrilhaD.Size = new System.Drawing.Size(122, 17);
+            this.l_panturrilhaD.TabIndex = 8;
+            this.l_panturrilhaD.Text = "Panturrilha Direita";
             // 
-            // txb_coxaD
+            // l_cintura
             // 
-            this.txb_coxaD.Location = new System.Drawing.Point(20, 239);
-            this.txb_coxaD.Name = "txb_coxaD";
-            this.txb_coxaD.Size = new System.Drawing.Size(100, 23);
-            this.txb_coxaD.TabIndex = 23;
+            this.l_cintura.AutoSize = true;
+            this.l_cintura.Location = new System.Drawing.Point(192, 130);
+            this.l_cintura.Name = "l_cintura";
+            this.l_cintura.Size = new System.Drawing.Size(53, 17);
+            this.l_cintura.TabIndex = 7;
+            this.l_cintura.Text = "Cintura";
             // 
-            // txb_coxaE
+            // l_peito
             // 
-            this.txb_coxaE.Location = new System.Drawing.Point(195, 239);
-            this.txb_coxaE.Name = "txb_coxaE";
-            this.txb_coxaE.Size = new System.Drawing.Size(100, 23);
-            this.txb_coxaE.TabIndex = 24;
+            this.l_peito.AutoSize = true;
+            this.l_peito.Location = new System.Drawing.Point(17, 130);
+            this.l_peito.Name = "l_peito";
+            this.l_peito.Size = new System.Drawing.Size(40, 17);
+            this.l_peito.TabIndex = 6;
+            this.l_peito.Text = "Peito";
             // 
-            // txb_bracoD
+            // l_imc
             // 
-            this.txb_bracoD.Location = new System.Drawing.Point(368, 239);
-            this.txb_bracoD.Name = "txb_bracoD";
-            this.txb_bracoD.Size = new System.Drawing.Size(100, 23);
-            this.txb_bracoD.TabIndex = 25;
+            this.l_imc.AutoSize = true;
+            this.l_imc.Location = new System.Drawing.Point(557, 32);
+            this.l_imc.Name = "l_imc";
+            this.l_imc.Size = new System.Drawing.Size(31, 17);
+            this.l_imc.TabIndex = 5;
+            this.l_imc.Text = "IMC";
             // 
-            // txb_bracoE
+            // l_altura
             // 
-            this.txb_bracoE.Location = new System.Drawing.Point(560, 239);
-            this.txb_bracoE.Name = "txb_bracoE";
-            this.txb_bracoE.Size = new System.Drawing.Size(100, 23);
-            this.txb_bracoE.TabIndex = 26;
+            this.l_altura.AutoSize = true;
+            this.l_altura.Location = new System.Drawing.Point(442, 32);
+            this.l_altura.Name = "l_altura";
+            this.l_altura.Size = new System.Drawing.Size(45, 17);
+            this.l_altura.TabIndex = 4;
+            this.l_altura.Text = "Altura";
             // 
-            // txb_antebracoD
+            // txb_peso
             // 
-            this.txb_antebracoD.Location = new System.Drawing.Point(20, 322);
-            this.txb_antebracoD.Name = "txb_antebracoD";
-            this.txb_antebracoD.Size = new System.Drawing.Size(100, 23);
-            this.txb_antebracoD.TabIndex = 27;
+            this.txb_peso.Location = new System.Drawing.Point(324, 55);
+            this.txb_peso.Name = "txb_peso";
+            this.txb_peso.Size = new System.Drawing.Size(59, 23);
+            this.txb_peso.TabIndex = 3;
             // 
-            // txb_antebracoE
+            // l_peso
             // 
-            this.txb_antebracoE.Location = new System.Drawing.Point(195, 322);
-            this.txb_antebracoE.Name = "txb_antebracoE";
-            this.txb_antebracoE.Size = new System.Drawing.Size(100, 23);
-            this.txb_antebracoE.TabIndex = 28;
+            this.l_peso.AutoSize = true;
+            this.l_peso.Location = new System.Drawing.Point(321, 32);
+            this.l_peso.Name = "l_peso";
+            this.l_peso.Size = new System.Drawing.Size(40, 17);
+            this.l_peso.TabIndex = 2;
+            this.l_peso.Text = "Peso";
+            this.l_peso.Click += new System.EventHandler(this.l_peso_Click);
             // 
-            // txb_gluteo
+            // dateAvalicaoFisica
             // 
-            this.txb_gluteo.Location = new System.Drawing.Point(368, 322);
-            this.txb_gluteo.Name = "txb_gluteo";
-            this.txb_gluteo.Size = new System.Drawing.Size(100, 23);
-            this.txb_gluteo.TabIndex = 29;
+            this.dateAvalicaoFisica.Location = new System.Drawing.Point(20, 53);
+            this.dateAvalicaoFisica.Name = "dateAvalicaoFisica";
+            this.dateAvalicaoFisica.Size = new System.Drawing.Size(261, 23);
+            this.dateAvalicaoFisica.TabIndex = 1;
             // 
-            // btn_realizarAvalicao
+            // l_dataAvaliacao
             // 
-            this.btn_realizarAvalicao.Location = new System.Drawing.Point(293, 371);
-            this.btn_realizarAvalicao.Name = "btn_realizarAvalicao";
-            this.btn_realizarAvalicao.Size = new System.Drawing.Size(180, 23);
-            this.btn_realizarAvalicao.TabIndex = 30;
-            this.btn_realizarAvalicao.Text = "Realizar Avalição";
-            this.btn_realizarAvalicao.UseVisualStyleBackColor = true;
+            this.l_dataAvaliacao.AutoSize = true;
+            this.l_dataAvaliacao.Location = new System.Drawing.Point(17, 32);
+            this.l_dataAvaliacao.Name = "l_dataAvaliacao";
+            this.l_dataAvaliacao.Size = new System.Drawing.Size(103, 17);
+            this.l_dataAvaliacao.TabIndex = 0;
+            this.l_dataAvaliacao.Text = "Data Avaliação";
             // 
-            // btn_alterarAvaliacao
+            // btn_gerarBoleto
             // 
-            this.btn_alterarAvaliacao.Location = new System.Drawing.Point(710, 30);
-            this.btn_alterarAvaliacao.Name = "btn_alterarAvaliacao";
-            this.btn_alterarAvaliacao.Size = new System.Drawing.Size(25, 25);
-            this.btn_alterarAvaliacao.TabIndex = 31;
-            this.btn_alterarAvaliacao.UseVisualStyleBackColor = true;
-            this.btn_alterarAvaliacao.Click += new System.EventHandler(this.btn_alterarAvaliacao_Click);
-            // 
-            // btn_excluirAvaliacao
-            // 
-            this.btn_excluirAvaliacao.Location = new System.Drawing.Point(710, 80);
-            this.btn_excluirAvaliacao.Name = "btn_excluirAvaliacao";
-            this.btn_excluirAvaliacao.Size = new System.Drawing.Size(25, 25);
-            this.btn_excluirAvaliacao.TabIndex = 32;
-            this.btn_excluirAvaliacao.UseVisualStyleBackColor = true;
-            this.btn_excluirAvaliacao.Click += new System.EventHandler(this.btn_excluirAvaliacao_Click);
-            // 
-            // btn_atualizarAvaliacao
-            // 
-            this.btn_atualizarAvaliacao.Location = new System.Drawing.Point(20, 371);
-            this.btn_atualizarAvaliacao.Name = "btn_atualizarAvaliacao";
-            this.btn_atualizarAvaliacao.Size = new System.Drawing.Size(180, 23);
-            this.btn_atualizarAvaliacao.TabIndex = 33;
-            this.btn_atualizarAvaliacao.Text = "Atualizar";
-            this.btn_atualizarAvaliacao.UseVisualStyleBackColor = true;
-            this.btn_atualizarAvaliacao.Visible = false;
-            this.btn_atualizarAvaliacao.Click += new System.EventHandler(this.btn_atualizarAvaliacao_Click);
+            this.btn_gerarBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gerarBoleto.Location = new System.Drawing.Point(309, 471);
+            this.btn_gerarBoleto.Name = "btn_gerarBoleto";
+            this.btn_gerarBoleto.Size = new System.Drawing.Size(180, 23);
+            this.btn_gerarBoleto.TabIndex = 86;
+            this.btn_gerarBoleto.Text = "Gerar Boleto";
+            this.btn_gerarBoleto.UseVisualStyleBackColor = true;
             // 
             // Perfil
             // 
@@ -840,9 +842,9 @@
             this.Mensalidades.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_foto)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_foto)).EndInit();
             this.AvalicaoFisica.ResumeLayout(false);
             this.AvalicaoFisica.PerformLayout();
             this.ResumeLayout(false);

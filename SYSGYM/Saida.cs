@@ -12,9 +12,15 @@ namespace SYSGYM
 {
     public partial class Saida : Form
     {
-        public Saida()
+        public Saida(string nome)
         {
             InitializeComponent();
+            l_nome.Text = nome;
+        }
+
+        private void Saida_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

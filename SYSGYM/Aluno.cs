@@ -12,21 +12,24 @@ namespace SYSGYM
 {
     public partial class Aluno : Form
     {
-        public Aluno()
+        int matricula_instrutor;
+
+        public Aluno(int mat_instrut)
         {
             InitializeComponent();
+            matricula_instrutor = mat_instrut;
         }
 
         private void btn_voltar_Click(object sender, EventArgs e)
         {
-            index index = new index();
+            index index = new index(matricula_instrutor); // ir sempre guardando a matricula do instrutor logado.
             index.Show();
             Hide();
         }
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
-            Aluno_Cadastrar Aluno_Cadastrar = new Aluno_Cadastrar();
+            Aluno_Cadastrar Aluno_Cadastrar = new Aluno_Cadastrar(matricula_instrutor);
             Aluno_Cadastrar.Show();
             Hide();
         }
@@ -47,13 +50,18 @@ namespace SYSGYM
             }
             else
             {
-                Busca Busca = new Busca(txb_nome.Text);
+                Busca Busca = new Busca(matricula_instrutor, txb_nome.Text);
                 Busca.Show();
                 Hide();
             }
         }
 
         private void txb_nome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Aluno_Load(object sender, EventArgs e)
         {
 
         }

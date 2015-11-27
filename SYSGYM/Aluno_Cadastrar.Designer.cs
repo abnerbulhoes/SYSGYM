@@ -39,8 +39,6 @@
             this.l_telefone = new System.Windows.Forms.Label();
             this.dataNascimento = new System.Windows.Forms.DateTimePicker();
             this.l_dataNascimento = new System.Windows.Forms.Label();
-            this.ckb_masculino = new System.Windows.Forms.CheckBox();
-            this.ckb_feminino = new System.Windows.Forms.CheckBox();
             this.l_sexo = new System.Windows.Forms.Label();
             this.l_email = new System.Windows.Forms.Label();
             this.txb_email = new System.Windows.Forms.TextBox();
@@ -56,6 +54,8 @@
             this.txb_rua = new System.Windows.Forms.TextBox();
             this.txb_estado = new System.Windows.Forms.TextBox();
             this.txb_bairro = new System.Windows.Forms.TextBox();
+            this.ckb_feminino = new System.Windows.Forms.RadioButton();
+            this.ckb_masculino = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pic_foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,30 +164,6 @@
             this.l_dataNascimento.TabIndex = 12;
             this.l_dataNascimento.Text = "Data Nascimento";
             // 
-            // ckb_masculino
-            // 
-            this.ckb_masculino.AutoSize = true;
-            this.ckb_masculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckb_masculino.Location = new System.Drawing.Point(534, 200);
-            this.ckb_masculino.Name = "ckb_masculino";
-            this.ckb_masculino.Size = new System.Drawing.Size(90, 21);
-            this.ckb_masculino.TabIndex = 13;
-            this.ckb_masculino.Text = "Masculino";
-            this.ckb_masculino.UseVisualStyleBackColor = true;
-            this.ckb_masculino.CheckedChanged += new System.EventHandler(this.ckb_masculino_CheckedChanged);
-            // 
-            // ckb_feminino
-            // 
-            this.ckb_feminino.AutoSize = true;
-            this.ckb_feminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckb_feminino.Location = new System.Drawing.Point(631, 200);
-            this.ckb_feminino.Name = "ckb_feminino";
-            this.ckb_feminino.Size = new System.Drawing.Size(84, 21);
-            this.ckb_feminino.TabIndex = 14;
-            this.ckb_feminino.Text = "Feminino";
-            this.ckb_feminino.UseVisualStyleBackColor = true;
-            this.ckb_feminino.CheckedChanged += new System.EventHandler(this.ckb_feminino_CheckedChanged);
-            // 
             // l_sexo
             // 
             this.l_sexo.AutoSize = true;
@@ -245,6 +221,7 @@
             this.btn_salvar.TabIndex = 21;
             this.btn_salvar.Text = "Salvar!";
             this.btn_salvar.UseVisualStyleBackColor = true;
+            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
             // 
             // dateCadastro
             // 
@@ -326,11 +303,38 @@
             this.txb_bairro.Size = new System.Drawing.Size(211, 23);
             this.txb_bairro.TabIndex = 30;
             // 
+            // ckb_feminino
+            // 
+            this.ckb_feminino.AutoSize = true;
+            this.ckb_feminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb_feminino.Location = new System.Drawing.Point(648, 201);
+            this.ckb_feminino.Name = "ckb_feminino";
+            this.ckb_feminino.Size = new System.Drawing.Size(83, 21);
+            this.ckb_feminino.TabIndex = 32;
+            this.ckb_feminino.TabStop = true;
+            this.ckb_feminino.Text = "Feminino";
+            this.ckb_feminino.UseVisualStyleBackColor = true;
+            this.ckb_feminino.CheckedChanged += new System.EventHandler(this.ckb_feminino_CheckedChanged_1);
+            // 
+            // ckb_masculino
+            // 
+            this.ckb_masculino.AutoSize = true;
+            this.ckb_masculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb_masculino.Location = new System.Drawing.Point(534, 201);
+            this.ckb_masculino.Name = "ckb_masculino";
+            this.ckb_masculino.Size = new System.Drawing.Size(89, 21);
+            this.ckb_masculino.TabIndex = 31;
+            this.ckb_masculino.TabStop = true;
+            this.ckb_masculino.Text = "Masculino";
+            this.ckb_masculino.UseVisualStyleBackColor = true;
+            // 
             // Aluno_Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.ckb_feminino);
+            this.Controls.Add(this.ckb_masculino);
             this.Controls.Add(this.txb_bairro);
             this.Controls.Add(this.txb_estado);
             this.Controls.Add(this.txb_rua);
@@ -346,8 +350,6 @@
             this.Controls.Add(this.txb_email);
             this.Controls.Add(this.l_email);
             this.Controls.Add(this.l_sexo);
-            this.Controls.Add(this.ckb_feminino);
-            this.Controls.Add(this.ckb_masculino);
             this.Controls.Add(this.l_dataNascimento);
             this.Controls.Add(this.dataNascimento);
             this.Controls.Add(this.l_telefone);
@@ -362,6 +364,7 @@
             this.Name = "Aluno_Cadastrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Aluno";
+            this.Load += new System.EventHandler(this.Aluno_Cadastrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_foto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -381,8 +384,6 @@
         private System.Windows.Forms.Label l_telefone;
         private System.Windows.Forms.DateTimePicker dataNascimento;
         private System.Windows.Forms.Label l_dataNascimento;
-        private System.Windows.Forms.CheckBox ckb_masculino;
-        private System.Windows.Forms.CheckBox ckb_feminino;
         private System.Windows.Forms.Label l_sexo;
         private System.Windows.Forms.Label l_email;
         private System.Windows.Forms.TextBox txb_email;
@@ -398,5 +399,7 @@
         private System.Windows.Forms.TextBox txb_rua;
         private System.Windows.Forms.TextBox txb_estado;
         private System.Windows.Forms.TextBox txb_bairro;
+        private System.Windows.Forms.RadioButton ckb_feminino;
+        private System.Windows.Forms.RadioButton ckb_masculino;
     }
 }

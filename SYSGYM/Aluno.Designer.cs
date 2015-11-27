@@ -116,6 +116,7 @@
             this.Name = "Aluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aluno";
+            this.Load += new System.EventHandler(this.Aluno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

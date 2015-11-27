@@ -30,14 +30,15 @@
         {
             this.btn_alunos = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
+            this.btn_gerarRelatorio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_alunos
             // 
-            this.btn_alunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_alunos.Location = new System.Drawing.Point(68, 68);
+            this.btn_alunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_alunos.Location = new System.Drawing.Point(104, 209);
             this.btn_alunos.Name = "btn_alunos";
-            this.btn_alunos.Size = new System.Drawing.Size(87, 30);
+            this.btn_alunos.Size = new System.Drawing.Size(224, 74);
             this.btn_alunos.TabIndex = 0;
             this.btn_alunos.Text = "Alunos";
             this.btn_alunos.UseVisualStyleBackColor = true;
@@ -56,16 +57,29 @@
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             // 
+            // btn_gerarRelatorio
+            // 
+            this.btn_gerarRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gerarRelatorio.Location = new System.Drawing.Point(436, 209);
+            this.btn_gerarRelatorio.Name = "btn_gerarRelatorio";
+            this.btn_gerarRelatorio.Size = new System.Drawing.Size(224, 74);
+            this.btn_gerarRelatorio.TabIndex = 2;
+            this.btn_gerarRelatorio.Text = "Gerar Relatório";
+            this.btn_gerarRelatorio.UseVisualStyleBackColor = true;
+            this.btn_gerarRelatorio.Click += new System.EventHandler(this.btn_gerarRelatorio_Click);
+            // 
             // index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btn_gerarRelatorio);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_alunos);
             this.Name = "index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Painel Principal";
+            this.Load += new System.EventHandler(this.index_Load);
             this.ResumeLayout(false);
 
         }
@@ -74,5 +88,6 @@
 
         private System.Windows.Forms.Button btn_alunos;
         private System.Windows.Forms.Button btn_sair;
+        private System.Windows.Forms.Button btn_gerarRelatorio;
     }
 }

@@ -2,6 +2,13 @@ using System;
 
 public class AvaliacaoFisica
 {
+    public AvaliacaoFisica(string nom)
+    {
+        nomeInstrutor = nom;
+    }
+
+    public string nomeInstrutor { get; set; }
+
 	private DateTime _dataAvaliacao;
     public DateTime DataAvaliacao
     {
@@ -109,13 +116,5 @@ public class AvaliacaoFisica
         get { return gluteo; }
         set { gluteo = Gluteo; }
     }
-
-	private Instrutor instrutor;
-    public Instrutor Instruto
-    {
-        get { return instrutor; }
-        set { instrutor = Instruto; }
-    }
-
 }
 

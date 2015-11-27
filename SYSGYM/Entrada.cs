@@ -12,9 +12,10 @@ namespace SYSGYM
 {
     public partial class Entrada : Form
     {
-        public Entrada()
+        public Entrada(string nome)
         {
-            InitializeComponent();                        
+            InitializeComponent();
+            l_nome.Text = nome;                       
         }
 
         private void Entrada_Load(object sender, EventArgs e)

@@ -13,12 +13,5 @@ public class Acesso
         get { return tempo; }
         set { tempo = Tempo; }
     }
-
-	private Pessoa pessoa;
-    public Pessoa Pessoa
-    {
-        get { return pessoa; }
-        set { pessoa = Pessoa; }
-    }
 }
 

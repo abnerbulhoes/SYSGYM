@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 public class Instrutor : Pessoa
 {
 	private string login;
@@ -28,12 +30,16 @@ public class Instrutor : Pessoa
 
 	public void Login()
 	{
-
+        if (this.Ativo == true)
+        {
+            MessageBox.Show("O usuário já está logado!");
+        }else
+        this.Ativo = true;
 	}
 
 	public void Logout()
 	{
-
+        this.Ativo = false;
 	}
 
 	public void RealizaAvaliacao()

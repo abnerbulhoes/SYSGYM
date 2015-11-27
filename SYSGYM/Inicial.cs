@@ -102,18 +102,20 @@ namespace SYSGYM
                 num_matricula = 0;
             }
             else
-                num_matricula = Convert.ToInt32(n_matricula.Text);
+                num_matricula = Convert.ToInt32(n_matricula.Text); // pegando matricula digitada na tela
 
 
-            if (num_matricula == 123) // Exemplo Aluno
-            {
-                Opcao_Aluno Opcao_Aluno = new Opcao_Aluno();
+            if (num_matricula == 123) // Exemplo Aluno, substituir 123 pela consulta do banco
+            {                
+                Opcao_Aluno Opcao_Aluno = new Opcao_Aluno(num_matricula);
                 Opcao_Aluno.Show();                
                 Hide();
             }
-            else if(num_matricula == 456) // Exemplo Usuario do sistema
+            else if(num_matricula == 456) // Exemplo Usuario do sistema, substituir 456 pela consulta do banco
             {
-                Login Login = new Login();
+                string login = "adm"; //Pegar login, senha e  do usuario no banco
+                int senha = 123456;
+                Login Login = new Login(num_matricula, login, senha); // passar login e senha para verificar na prox tela
                 Login.Show();
                 Hide();
             }

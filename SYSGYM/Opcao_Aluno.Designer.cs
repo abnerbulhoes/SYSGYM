@@ -64,6 +64,7 @@
             this.Name = "Opcao_Aluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Opcao_Aluno";
+            this.Load += new System.EventHandler(this.Opcao_Aluno_Load);
             this.ResumeLayout(false);
 
         }
