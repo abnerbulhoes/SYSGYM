@@ -12,10 +12,10 @@ namespace SYSGYM
 {
     public partial class Login : Form
     {
-        string login;
-        int senha, matricula_instrutor;
+        string senha;
+        int login, matricula_instrutor;
 
-        public Login(int mat_instrut, string logi, int senh)
+        public Login(int mat_instrut, int logi, string senh)
         {
             InitializeComponent();
             login = logi;
@@ -30,7 +30,7 @@ namespace SYSGYM
                 Console.Beep();
                 MessageBox.Show("Login ou senha inválidos!");                
             }
-            else if( txb_login.Text == login && txb_senha.Text == Convert.ToString(senha)) // testando login
+            else if( txb_login.Text == Convert.ToString(login) && txb_senha.Text == senha) // testando login
             {
                 index index = new index(matricula_instrutor);
                 index.Show();

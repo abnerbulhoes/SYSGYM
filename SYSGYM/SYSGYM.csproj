@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,13 +69,13 @@
     <Compile Include="Busca.Designer.cs">
       <DependentUpon>Busca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Acesso.cs" />
-    <Compile Include="Classes\Aluno.cs" />
-    <Compile Include="Classes\AvaliacaoFisica.cs" />
-    <Compile Include="Classes\Endereco.cs" />
-    <Compile Include="Classes\Instrutor.cs" />
-    <Compile Include="Classes\Mensalidade.cs" />
-    <Compile Include="Classes\Pessoa.cs" />
+    <Compile Include="Classes\Classe_Acesso.cs" />
+    <Compile Include="Classes\Classe_Aluno.cs" />
+    <Compile Include="Classes\Classe_AvaliacaoFisica.cs" />
+    <Compile Include="Classes\Classe_Endereco.cs" />
+    <Compile Include="Classes\Classe_Instrutor.cs" />
+    <Compile Include="Classes\Classe_Mensalidade.cs" />
+    <Compile Include="Classes\Classe_Pessoa.cs" />
     <Compile Include="Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +160,7 @@
     <EmbeddedResource Include="Saida.resx">
       <DependentUpon>Saida.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.ManagedDataAccess.Client;
 
 namespace SYSGYM
 {
     public partial class Inicial : Form
     {
+        //string de conexao
+        string oradb = "Data Source=(DESCRIPTION="
++ "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))"
++ "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xe)));"
++ "User Id=adm;Password=123456;";
+
         public Inicial()
         {
             InitializeComponent();
@@ -93,10 +100,12 @@ namespace SYSGYM
         {
             n_matricula.Text = "";
         }
+
                 
 
         private void btn_ok_Click(object sender, EventArgs e)
         {
+
             if (n_matricula.Text == "" || n_matricula.Text == null)
             {
                 num_matricula = 0;
@@ -104,27 +113,46 @@ namespace SYSGYM
             else
                 num_matricula = Convert.ToInt32(n_matricula.Text); // pegando matricula digitada na tela
 
+            try
+            {
+                OracleConnection conn = new OracleConnection(oradb);
+                conn.Open();
 
-            if (num_matricula == 123) // Exemplo Aluno, substituir 123 pela consulta do banco
-            {                
-                Opcao_Aluno Opcao_Aluno = new Opcao_Aluno(num_matricula);
-                Opcao_Aluno.Show();                
-                Hide();
-            }
-            else if(num_matricula == 456) // Exemplo Usuario do sistema, substituir 456 pela consulta do banco
+                OracleCommand oda = new OracleCommand("SELECT matricula FROM aluno WHERE matricula ="+ num_matricula, conn);
+                OracleDataReader reader = oda.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Opcao_Aluno Opcao_Aluno = new Opcao_Aluno(num_matricula);
+                    Opcao_Aluno.Show();
+                    Hide();
+                }else {
+                    OracleCommand oda2 = new OracleCommand("SELECT matricula, senha FROM instrutor WHERE matricula =" + num_matricula, conn);
+                    OracleDataReader reader2 = oda2.ExecuteReader();
+                    
+                    if (reader2.HasRows)
+                    {
+                        reader2.Read();
+                        int login = reader2.GetInt32(0);
+                        string senha = reader2.GetString(1);
+
+                        Login Login = new Login(num_matricula, login, senha); // passar login e senha para verificar na prox tela
+                        Login.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        Console.Beep();
+                        MessageBox.Show("Numero de matrícula inválido!");
+                        n_matricula.Text = "";
+                    }
+                }
+                conn.Close();
+            }            
+            catch (Exception ex) // detecta todos os erros
             {
-                string login = "adm"; //Pegar login, senha e  do usuario no banco
-                int senha = 123456;
-                Login Login = new Login(num_matricula, login, senha); // passar login e senha para verificar na prox tela
-                Login.Show();
-                Hide();
+                MessageBox.Show(ex.Message.ToString());
             }
-            else
-            {
-                Console.Beep();
-                MessageBox.Show("Numero de matrícula inválido!");
-                n_matricula.Text = "";
-            }
+            
         }
     }
 }
