@@ -30,6 +30,7 @@
         {
             this.l_bemVindo = new System.Windows.Forms.Label();
             this.l_nome = new System.Windows.Forms.Label();
+            this.btn_inicio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // l_bemVindo
@@ -51,11 +52,23 @@
             this.l_nome.Size = new System.Drawing.Size(0, 31);
             this.l_nome.TabIndex = 85;
             // 
+            // btn_inicio
+            // 
+            this.btn_inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inicio.Location = new System.Drawing.Point(669, 495);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Size = new System.Drawing.Size(103, 54);
+            this.btn_inicio.TabIndex = 86;
+            this.btn_inicio.Text = "Inicio";
+            this.btn_inicio.UseVisualStyleBackColor = true;
+            this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
+            // 
             // Entrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btn_inicio);
             this.Controls.Add(this.l_nome);
             this.Controls.Add(this.l_bemVindo);
             this.Name = "Entrada";
@@ -71,5 +84,6 @@
 
         private System.Windows.Forms.Label l_bemVindo;
         private System.Windows.Forms.Label l_nome;
+        private System.Windows.Forms.Button btn_inicio;
     }
 }

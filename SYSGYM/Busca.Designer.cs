@@ -32,6 +32,8 @@
             this.l_resultado = new System.Windows.Forms.Label();
             this.l_nome = new System.Windows.Forms.Label();
             this.btn_selecionar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_voltar
@@ -75,11 +77,23 @@
             this.btn_selecionar.UseVisualStyleBackColor = true;
             this.btn_selecionar.Click += new System.EventHandler(this.btn_selecionar_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridView1.Location = new System.Drawing.Point(45, 84);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(692, 416);
+            this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // Busca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_selecionar);
             this.Controls.Add(this.l_nome);
             this.Controls.Add(this.l_resultado);
@@ -88,6 +102,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busca";
             this.Load += new System.EventHandler(this.Busca_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,5 +114,6 @@
         private System.Windows.Forms.Label l_resultado;
         private System.Windows.Forms.Label l_nome;
         private System.Windows.Forms.Button btn_selecionar;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

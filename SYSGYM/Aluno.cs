@@ -50,7 +50,11 @@ namespace SYSGYM
             }
             else
             {
-                Busca Busca = new Busca(matricula_instrutor, txb_nome.Text);
+                string text = txb_nome.Text;
+                string subs1 = text.Substring(0, 1).ToUpper();
+                string subs2 = text.Substring(1, 4).ToLower();
+                string subs = subs1 + subs2;
+                Busca Busca = new Busca(matricula_instrutor, txb_nome.Text, subs);
                 Busca.Show();
                 Hide();
             }

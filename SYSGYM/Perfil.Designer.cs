@@ -33,6 +33,8 @@
             this.btn_atualizarAluno = new System.Windows.Forms.Button();
             this.Mensalidades = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ckb_feminino = new System.Windows.Forms.RadioButton();
+            this.ckb_masculino = new System.Windows.Forms.RadioButton();
             this.txb_bairro = new System.Windows.Forms.TextBox();
             this.txb_estado = new System.Windows.Forms.TextBox();
             this.txb_rua = new System.Windows.Forms.TextBox();
@@ -45,8 +47,6 @@
             this.txb_email = new System.Windows.Forms.TextBox();
             this.l_email = new System.Windows.Forms.Label();
             this.l_sexo = new System.Windows.Forms.Label();
-            this.ckb_feminino = new System.Windows.Forms.CheckBox();
-            this.ckb_masculino = new System.Windows.Forms.CheckBox();
             this.l_dataNascimento = new System.Windows.Forms.Label();
             this.dataNascimento = new System.Windows.Forms.DateTimePicker();
             this.l_telefone = new System.Windows.Forms.Label();
@@ -102,6 +102,7 @@
             this.dateAvalicaoFisica = new System.Windows.Forms.DateTimePicker();
             this.l_dataAvaliacao = new System.Windows.Forms.Label();
             this.btn_gerarBoleto = new System.Windows.Forms.Button();
+            this.btn_salvar = new System.Windows.Forms.Button();
             this.Mensalidades.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_foto)).BeginInit();
@@ -139,6 +140,7 @@
             this.btn_atualizarAluno.TabIndex = 60;
             this.btn_atualizarAluno.Text = "Atualizar Aluno";
             this.btn_atualizarAluno.UseVisualStyleBackColor = true;
+            this.btn_atualizarAluno.Click += new System.EventHandler(this.btn_atualizarAluno_Click);
             // 
             // Mensalidades
             // 
@@ -155,6 +157,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.Controls.Add(this.ckb_feminino);
+            this.tabPage1.Controls.Add(this.ckb_masculino);
             this.tabPage1.Controls.Add(this.txb_bairro);
             this.tabPage1.Controls.Add(this.txb_estado);
             this.tabPage1.Controls.Add(this.txb_rua);
@@ -167,8 +171,6 @@
             this.tabPage1.Controls.Add(this.txb_email);
             this.tabPage1.Controls.Add(this.l_email);
             this.tabPage1.Controls.Add(this.l_sexo);
-            this.tabPage1.Controls.Add(this.ckb_feminino);
-            this.tabPage1.Controls.Add(this.ckb_masculino);
             this.tabPage1.Controls.Add(this.l_dataNascimento);
             this.tabPage1.Controls.Add(this.dataNascimento);
             this.tabPage1.Controls.Add(this.l_telefone);
@@ -186,8 +188,36 @@
             this.tabPage1.Text = "Perfil";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // ckb_feminino
+            // 
+            this.ckb_feminino.AutoSize = true;
+            this.ckb_feminino.Enabled = false;
+            this.ckb_feminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb_feminino.Location = new System.Drawing.Point(660, 66);
+            this.ckb_feminino.Name = "ckb_feminino";
+            this.ckb_feminino.Size = new System.Drawing.Size(83, 21);
+            this.ckb_feminino.TabIndex = 86;
+            this.ckb_feminino.TabStop = true;
+            this.ckb_feminino.Text = "Feminino";
+            this.ckb_feminino.UseVisualStyleBackColor = true;
+            // 
+            // ckb_masculino
+            // 
+            this.ckb_masculino.AutoSize = true;
+            this.ckb_masculino.Enabled = false;
+            this.ckb_masculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb_masculino.Location = new System.Drawing.Point(568, 66);
+            this.ckb_masculino.Name = "ckb_masculino";
+            this.ckb_masculino.Size = new System.Drawing.Size(89, 21);
+            this.ckb_masculino.TabIndex = 85;
+            this.ckb_masculino.TabStop = true;
+            this.ckb_masculino.Text = "Masculino";
+            this.ckb_masculino.UseVisualStyleBackColor = true;
+            this.ckb_masculino.CheckedChanged += new System.EventHandler(this.ckb_masculino_CheckedChanged);
+            // 
             // txb_bairro
             // 
+            this.txb_bairro.Enabled = false;
             this.txb_bairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_bairro.Location = new System.Drawing.Point(361, 306);
             this.txb_bairro.Name = "txb_bairro";
@@ -196,6 +226,7 @@
             // 
             // txb_estado
             // 
+            this.txb_estado.Enabled = false;
             this.txb_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_estado.Location = new System.Drawing.Point(361, 367);
             this.txb_estado.Name = "txb_estado";
@@ -204,6 +235,7 @@
             // 
             // txb_rua
             // 
+            this.txb_rua.Enabled = false;
             this.txb_rua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_rua.Location = new System.Drawing.Point(5, 367);
             this.txb_rua.Name = "txb_rua";
@@ -212,6 +244,7 @@
             // 
             // txb_cep
             // 
+            this.txb_cep.Enabled = false;
             this.txb_cep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_cep.Location = new System.Drawing.Point(5, 307);
             this.txb_cep.Name = "txb_cep";
@@ -269,6 +302,7 @@
             // 
             // txb_email
             // 
+            this.txb_email.Enabled = false;
             this.txb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_email.Location = new System.Drawing.Point(361, 240);
             this.txb_email.Name = "txb_email";
@@ -289,33 +323,11 @@
             // 
             this.l_sexo.AutoSize = true;
             this.l_sexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_sexo.Location = new System.Drawing.Point(631, 37);
+            this.l_sexo.Location = new System.Drawing.Point(633, 37);
             this.l_sexo.Name = "l_sexo";
             this.l_sexo.Size = new System.Drawing.Size(39, 17);
             this.l_sexo.TabIndex = 73;
             this.l_sexo.Text = "Sexo";
-            // 
-            // ckb_feminino
-            // 
-            this.ckb_feminino.AutoSize = true;
-            this.ckb_feminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckb_feminino.Location = new System.Drawing.Point(668, 66);
-            this.ckb_feminino.Name = "ckb_feminino";
-            this.ckb_feminino.Size = new System.Drawing.Size(84, 21);
-            this.ckb_feminino.TabIndex = 72;
-            this.ckb_feminino.Text = "Feminino";
-            this.ckb_feminino.UseVisualStyleBackColor = true;
-            // 
-            // ckb_masculino
-            // 
-            this.ckb_masculino.AutoSize = true;
-            this.ckb_masculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckb_masculino.Location = new System.Drawing.Point(568, 66);
-            this.ckb_masculino.Name = "ckb_masculino";
-            this.ckb_masculino.Size = new System.Drawing.Size(90, 21);
-            this.ckb_masculino.TabIndex = 71;
-            this.ckb_masculino.Text = "Masculino";
-            this.ckb_masculino.UseVisualStyleBackColor = true;
             // 
             // l_dataNascimento
             // 
@@ -329,6 +341,7 @@
             // 
             // dataNascimento
             // 
+            this.dataNascimento.Enabled = false;
             this.dataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataNascimento.Location = new System.Drawing.Point(361, 168);
             this.dataNascimento.Name = "dataNascimento";
@@ -348,6 +361,7 @@
             // 
             // txb_telefone
             // 
+            this.txb_telefone.Enabled = false;
             this.txb_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_telefone.Location = new System.Drawing.Point(5, 240);
             this.txb_telefone.Name = "txb_telefone";
@@ -356,6 +370,7 @@
             // 
             // txb_cpf
             // 
+            this.txb_cpf.Enabled = false;
             this.txb_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_cpf.Location = new System.Drawing.Point(5, 167);
             this.txb_cpf.Name = "txb_cpf";
@@ -374,6 +389,7 @@
             // 
             // txb_nome
             // 
+            this.txb_nome.Enabled = false;
             this.txb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_nome.Location = new System.Drawing.Point(100, 64);
             this.txb_nome.Name = "txb_nome";
@@ -433,6 +449,7 @@
             this.txb_mesReferencia.Name = "txb_mesReferencia";
             this.txb_mesReferencia.Size = new System.Drawing.Size(100, 23);
             this.txb_mesReferencia.TabIndex = 7;
+            this.txb_mesReferencia.TextChanged += new System.EventHandler(this.txb_mesReferencia_TextChanged);
             // 
             // date_VencimentoMesalidade
             // 
@@ -440,6 +457,7 @@
             this.date_VencimentoMesalidade.Name = "date_VencimentoMesalidade";
             this.date_VencimentoMesalidade.Size = new System.Drawing.Size(290, 23);
             this.date_VencimentoMesalidade.TabIndex = 6;
+            this.date_VencimentoMesalidade.ValueChanged += new System.EventHandler(this.date_VencimentoMesalidade_ValueChanged);
             // 
             // txb_statusMensalidade
             // 
@@ -826,11 +844,24 @@
             this.btn_gerarBoleto.Text = "Gerar Boleto";
             this.btn_gerarBoleto.UseVisualStyleBackColor = true;
             // 
+            // btn_salvar
+            // 
+            this.btn_salvar.Enabled = false;
+            this.btn_salvar.Location = new System.Drawing.Point(349, 520);
+            this.btn_salvar.Name = "btn_salvar";
+            this.btn_salvar.Size = new System.Drawing.Size(102, 35);
+            this.btn_salvar.TabIndex = 87;
+            this.btn_salvar.Text = "Salvar";
+            this.btn_salvar.UseVisualStyleBackColor = true;
+            this.btn_salvar.Visible = false;
+            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btn_salvar);
             this.Controls.Add(this.btn_gerarBoleto);
             this.Controls.Add(this.Mensalidades);
             this.Controls.Add(this.btn_atualizarAluno);
@@ -839,6 +870,7 @@
             this.Name = "Perfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";
+            this.Load += new System.EventHandler(this.Perfil_Load);
             this.Mensalidades.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -870,8 +902,6 @@
         private System.Windows.Forms.TextBox txb_email;
         private System.Windows.Forms.Label l_email;
         private System.Windows.Forms.Label l_sexo;
-        private System.Windows.Forms.CheckBox ckb_feminino;
-        private System.Windows.Forms.CheckBox ckb_masculino;
         private System.Windows.Forms.Label l_dataNascimento;
         private System.Windows.Forms.DateTimePicker dataNascimento;
         private System.Windows.Forms.Label l_telefone;
@@ -926,5 +956,8 @@
         private System.Windows.Forms.Button btn_alterarAvaliacao;
         private System.Windows.Forms.Button btn_realizarAvalicao;
         private System.Windows.Forms.Button btn_atualizarAvaliacao;
+        private System.Windows.Forms.RadioButton ckb_feminino;
+        private System.Windows.Forms.RadioButton ckb_masculino;
+        private System.Windows.Forms.Button btn_salvar;
     }
 }

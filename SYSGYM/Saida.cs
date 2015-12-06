@@ -22,5 +22,12 @@ namespace SYSGYM
         {
             
         }
+
+        private void btn_inicio_Click(object sender, EventArgs e)
+        {
+            Inicial Inicial = new Inicial();
+            Inicial.Show();
+            Hide();
+        }
     }
 }

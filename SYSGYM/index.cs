@@ -39,8 +39,9 @@ namespace SYSGYM
 
         private void btn_gerarRelatorio_Click(object sender, EventArgs e)
         {
-            //implementar botao gerar relatorio...
-            //continuar carregando a matricula do instrutor...
+            Relatorios Relatorio = new Relatorios(matricula_instrutor);
+            Relatorio.Show();
+            Hide();
         }
     }
 }
